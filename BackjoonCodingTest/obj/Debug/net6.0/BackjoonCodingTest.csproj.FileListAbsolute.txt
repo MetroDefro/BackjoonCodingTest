@@ -1,0 +1,15 @@
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\bin\Debug\net6.0\BackjoonCodingTest.exe
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\bin\Debug\net6.0\BackjoonCodingTest.deps.json
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\bin\Debug\net6.0\BackjoonCodingTest.runtimeconfig.json
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\bin\Debug\net6.0\BackjoonCodingTest.dll
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\bin\Debug\net6.0\BackjoonCodingTest.pdb
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\obj\Debug\net6.0\BackjoonCodingTest.csproj.AssemblyReference.cache
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\obj\Debug\net6.0\BackjoonCodingTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\obj\Debug\net6.0\BackjoonCodingTest.AssemblyInfoInputs.cache
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\obj\Debug\net6.0\BackjoonCodingTest.AssemblyInfo.cs
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\obj\Debug\net6.0\BackjoonCodingTest.csproj.CoreCompileInputs.cache
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\obj\Debug\net6.0\BackjoonCodingTest.dll
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\obj\Debug\net6.0\refint\BackjoonCodingTest.dll
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\obj\Debug\net6.0\BackjoonCodingTest.pdb
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\obj\Debug\net6.0\BackjoonCodingTest.genruntimeconfig.cache
+D:\My\Practice\BackjoonCodingTest\BackjoonCodingTest\obj\Debug\net6.0\ref\BackjoonCodingTest.dll
