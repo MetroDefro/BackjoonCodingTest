@@ -1,0 +1,15 @@
+D:\My\Practice\BackjoonCodingTest\No_1008\bin\Debug\net6.0\No_1008.exe
+D:\My\Practice\BackjoonCodingTest\No_1008\bin\Debug\net6.0\No_1008.deps.json
+D:\My\Practice\BackjoonCodingTest\No_1008\bin\Debug\net6.0\No_1008.runtimeconfig.json
+D:\My\Practice\BackjoonCodingTest\No_1008\bin\Debug\net6.0\No_1008.dll
+D:\My\Practice\BackjoonCodingTest\No_1008\bin\Debug\net6.0\No_1008.pdb
+D:\My\Practice\BackjoonCodingTest\No_1008\obj\Debug\net6.0\No_1008.csproj.AssemblyReference.cache
+D:\My\Practice\BackjoonCodingTest\No_1008\obj\Debug\net6.0\No_1008.GeneratedMSBuildEditorConfig.editorconfig
+D:\My\Practice\BackjoonCodingTest\No_1008\obj\Debug\net6.0\No_1008.AssemblyInfoInputs.cache
+D:\My\Practice\BackjoonCodingTest\No_1008\obj\Debug\net6.0\No_1008.AssemblyInfo.cs
+D:\My\Practice\BackjoonCodingTest\No_1008\obj\Debug\net6.0\No_1008.csproj.CoreCompileInputs.cache
+D:\My\Practice\BackjoonCodingTest\No_1008\obj\Debug\net6.0\No_1008.dll
+D:\My\Practice\BackjoonCodingTest\No_1008\obj\Debug\net6.0\refint\No_1008.dll
+D:\My\Practice\BackjoonCodingTest\No_1008\obj\Debug\net6.0\No_1008.pdb
+D:\My\Practice\BackjoonCodingTest\No_1008\obj\Debug\net6.0\No_1008.genruntimeconfig.cache
+D:\My\Practice\BackjoonCodingTest\No_1008\obj\Debug\net6.0\ref\No_1008.dll
