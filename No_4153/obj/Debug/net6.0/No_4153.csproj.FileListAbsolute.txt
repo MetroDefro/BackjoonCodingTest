@@ -1,0 +1,15 @@
+D:\My\Practice\BackjoonCodingTest\No_4153\bin\Debug\net6.0\No_4153.exe
+D:\My\Practice\BackjoonCodingTest\No_4153\bin\Debug\net6.0\No_4153.deps.json
+D:\My\Practice\BackjoonCodingTest\No_4153\bin\Debug\net6.0\No_4153.runtimeconfig.json
+D:\My\Practice\BackjoonCodingTest\No_4153\bin\Debug\net6.0\No_4153.dll
+D:\My\Practice\BackjoonCodingTest\No_4153\bin\Debug\net6.0\No_4153.pdb
+D:\My\Practice\BackjoonCodingTest\No_4153\obj\Debug\net6.0\No_4153.csproj.AssemblyReference.cache
+D:\My\Practice\BackjoonCodingTest\No_4153\obj\Debug\net6.0\No_4153.GeneratedMSBuildEditorConfig.editorconfig
+D:\My\Practice\BackjoonCodingTest\No_4153\obj\Debug\net6.0\No_4153.AssemblyInfoInputs.cache
+D:\My\Practice\BackjoonCodingTest\No_4153\obj\Debug\net6.0\No_4153.AssemblyInfo.cs
+D:\My\Practice\BackjoonCodingTest\No_4153\obj\Debug\net6.0\No_4153.csproj.CoreCompileInputs.cache
+D:\My\Practice\BackjoonCodingTest\No_4153\obj\Debug\net6.0\No_4153.dll
+D:\My\Practice\BackjoonCodingTest\No_4153\obj\Debug\net6.0\refint\No_4153.dll
+D:\My\Practice\BackjoonCodingTest\No_4153\obj\Debug\net6.0\No_4153.pdb
+D:\My\Practice\BackjoonCodingTest\No_4153\obj\Debug\net6.0\No_4153.genruntimeconfig.cache
+D:\My\Practice\BackjoonCodingTest\No_4153\obj\Debug\net6.0\ref\No_4153.dll
