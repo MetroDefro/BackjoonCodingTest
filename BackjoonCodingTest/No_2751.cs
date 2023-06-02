@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace BackjoonCodingTest
 {
-    internal class Program
+    public class No_2751
     {
-        static void Main(string[] args)
+        public No_2751()
         {
             using var reader = new System.IO.StreamReader(Console.OpenStandardInput());
             using var print = new System.IO.StreamWriter(Console.OpenStandardOutput());
@@ -13,18 +17,19 @@ namespace BackjoonCodingTest
 
             int[] array = new int[count];
 
-            for(int i = 0; i < count; i++)
+            for (int i = 0; i < count; i++)
             {
                 array[i] = int.Parse(reader.ReadLine());
             }
 
             array = Sort(array);
 
-            for(int i = 0; i < count; i++)
+            for (int i = 0; i < count; i++)
             {
                 print.WriteLine(array[i]);
             }
         }
+
         private static int[] Sort(int[] array)
         {
             array = Divide(array, array.Length);
