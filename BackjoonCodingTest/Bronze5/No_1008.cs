@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Bronze5
 {
     public class No_1008
     {

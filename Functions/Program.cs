@@ -7,16 +7,21 @@
             
         }
 
-        private static LinkedList<short> Divide(LinkedList<short> list, int count)
+        private static int[] Sort(int[] array)
+        {
+            array = Divide(array, array.Length);
+
+            return array;
+        }
+
+        private static int[] Divide(int[] list, int count)
         {
             int harfCount = count / 2;
 
-            LinkedList<short> divideListLeft = new LinkedList<short>();
-            LinkedListNode<short> curNode = list.First;
+            int[] divideListLeft = new int[harfCount];
             for (int i = 0; i < harfCount; i++)
             {
-                divideListLeft.AddLast(curNode);
-                curNode = curNode.Next;
+                divideListLeft[i] = list[i];
             }
 
             if (harfCount > 1)
@@ -24,11 +29,10 @@
                 divideListLeft = Divide(divideListLeft, harfCount);
             }
 
-            LinkedList<short> divideListRight = new LinkedList<short>();
+            int[] divideListRight = new int[count - harfCount];
             for (int i = 0; i < count - harfCount; i++)
             {
-                divideListRight.AddLast(curNode);
-                curNode = curNode.Next;
+                divideListRight[i] = list[harfCount + i];
             }
 
             if (count - harfCount > 1)
@@ -37,34 +41,36 @@
             }
 
 
-            return Merge(divideListLeft, divideListRight, harfCount, count - harfCount);
+            return Merge(divideListLeft, divideListRight, divideListLeft.Length, divideListRight.Length);
         }
 
-        private static LinkedList<short> Merge(LinkedList<short> leftList, LinkedList<short> rightList, int leftListCount, int rightListCount)
+        private static int[] Merge(int[] leftList, int[] rightList, int leftListCount, int rightListCount)
         {
-            LinkedList<short> list = new LinkedList<short>();
-            LinkedListNode<short> curLeftNode = leftList.First;
-            LinkedListNode<short> curRightNode = rightList.First;
-            while (curLeftNode != null && curRightNode != null)
+            int[] list = new int[leftListCount + rightListCount];
+
+            int leftIndex = 0;
+            int rightIndex = 0;
+            int mergeIndex = 0;
+            while (leftIndex < leftListCount && rightIndex < rightListCount)
             {
-                if (curLeftNode.Value < curRightNode.Value)
+                if (leftList[leftIndex] < rightList[rightIndex])
                 {
-                    list.AddLast(curLeftNode.Value);
+                    list[mergeIndex++] = leftList[leftIndex++];
                 }
                 else
                 {
-                    list.AddLast(curRightNode.Value);
+                    list[mergeIndex++] = rightList[rightIndex++];
                 }
             }
 
-            while (curLeftNode != null)
+            while (leftIndex < leftListCount)
             {
-                list.AddLast(curLeftNode.Value);
+                list[mergeIndex++] = leftList[leftIndex++];
             }
 
-            while (curRightNode != null)
+            while (rightIndex < rightListCount)
             {
-                list.AddLast(curRightNode.Value);
+                list[mergeIndex++] = rightList[rightIndex++];
             }
 
             return list;

@@ -1,16 +1,16 @@
 ﻿using System;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Bronze5
 {
-    public class No_1000
+    public class No_1001
     {
-        public No_1000()
+        public No_1001()
         {
             string input = Console.ReadLine();
             string[] result = input.Split(' ');
             int a = int.Parse(result[0]);
             int b = int.Parse(result[1]);
-            Console.WriteLine(a + b);
+            Console.WriteLine(a - b);
         }
     }
 }
