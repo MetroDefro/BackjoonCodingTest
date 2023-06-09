@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Silver5
 {
     public class No_1181
     {

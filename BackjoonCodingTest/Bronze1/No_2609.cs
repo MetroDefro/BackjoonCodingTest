@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Bronze1
 {
     public class No_2609
     {
@@ -39,7 +39,7 @@ namespace BackjoonCodingTest
 
         private static long LCM(int value1, int value2)
         {
-            return (value1 * value2 / GCD(value1, value2));
+            return value1 * value2 / GCD(value1, value2);
         }
     }
 }

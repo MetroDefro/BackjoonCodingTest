@@ -6,27 +6,40 @@ using System.Threading.Tasks;
 
 namespace BackjoonCodingTest
 {
-    public class No_2751
+    public class No_1920
     {
-        public No_2751()
+        public No_1920()
         {
             using var reader = new System.IO.StreamReader(Console.OpenStandardInput());
             using var print = new System.IO.StreamWriter(Console.OpenStandardOutput());
 
-            int count = int.Parse(reader.ReadLine());
+            string input = reader.ReadLine();
+            int N = int.Parse(input);
 
-            int[] array = new int[count];
-
-            for (int i = 0; i < count; i++)
+            input = reader.ReadLine();
+            string[] numsString = input.Split();
+            int[] A = new int[N];
+            for (int i = 0; i < N; i++)
             {
-                array[i] = int.Parse(reader.ReadLine());
+                A[i] = int.Parse(numsString[i]);
             }
 
-            array = Sort(array);
+            input = reader.ReadLine();
+            int M = int.Parse(input);
 
-            for (int i = 0; i < count; i++)
+            input = reader.ReadLine();
+            numsString = input.Split();
+            int[] nums = new int[M];
+            for (int i = 0; i < M; i++)
             {
-                print.WriteLine(array[i]);
+                nums[i] = int.Parse(numsString[i]);
+            }
+
+            A = Sort(A);
+
+            for (int i = 0; i < M; i++)
+            {
+                print.WriteLine(BinarySearch(A, nums[i]));
             }
         }
 
@@ -97,6 +110,32 @@ namespace BackjoonCodingTest
             }
 
             return list;
+        }
+
+        private static int BinarySearch(int[] list, int target)
+        {
+            int start = 0;
+            int end = list.Length - 1;
+            int mid = (end + start) / 2;
+
+            while (start <= end)
+            {
+                if (list[mid] == target)
+                {
+                    return 1;
+                }
+                else if (list[mid] > target)
+                {
+                    end = mid - 1;
+                }
+                else
+                {
+                    start = mid + 1;
+                }
+                mid = (end + start) / 2;
+            }
+
+            return 0;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Bronze1
 {
     public class No_1546
     {
@@ -22,7 +22,7 @@ namespace BackjoonCodingTest
             double sum = 0;
             for (int i = 0; i < scores.Length; i++)
             {
-                sum += (scores[i] / max) * 100;
+                sum += scores[i] / max * 100;
             }
 
             double aver = sum / count;

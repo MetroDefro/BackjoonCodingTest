@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace BackjoonCodingTest
 {
-    internal class Program
+    public class No_10250
     {
-        static void Main(string[] args)
+        public No_10250()
         {
             using var reader = new System.IO.StreamReader(Console.OpenStandardInput());
             using var print = new System.IO.StreamWriter(Console.OpenStandardOutput());
@@ -12,7 +16,7 @@ namespace BackjoonCodingTest
             string input = reader.ReadLine();
             int cases = int.Parse(input);
 
-            for(int i = 0; i < cases; i++)
+            for (int i = 0; i < cases; i++)
             {
                 input = reader.ReadLine();
                 int H = int.Parse(input.Split()[0]);

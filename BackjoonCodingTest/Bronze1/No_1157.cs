@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Bronze1
 {
     public class No_1157
     {
@@ -14,7 +14,7 @@ namespace BackjoonCodingTest
             {
                 for (int j = 0; j < alphabet.Length; j++)
                 {
-                    if ((char)input[i] == 'A' + j || (char)input[i] == 'a' + j)
+                    if (input[i] == 'A' + j || input[i] == 'a' + j)
                         alphabet[j]++;
                 }
             }

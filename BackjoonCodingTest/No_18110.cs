@@ -1,10 +1,51 @@
-﻿namespace Functions
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BackjoonCodingTest
 {
-    internal class Program
+    public class No_18110
     {
-        static void Main(string[] args)
+        public No_18110()
         {
-            
+            using var reader = new System.IO.StreamReader(Console.OpenStandardInput());
+            using var print = new System.IO.StreamWriter(Console.OpenStandardOutput());
+
+            int n = int.Parse(reader.ReadLine());
+            if (n == 0)
+            {
+                print.WriteLine(0);
+                return;
+            }
+
+            int[] scores = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                scores[i] = int.Parse(reader.ReadLine());
+            }
+
+            double num = (double)n * 0.15;
+            int delete = (int)num;
+            if (num - delete >= 0.5)
+                delete++;
+
+            scores = Sort(scores);
+
+            int sum = 0;
+
+            for (int i = delete; i < n - delete; i++)
+            {
+                sum += scores[i];
+            }
+
+            num = (double)sum / (n - delete * 2);
+            int avg = (int)num;
+            if (num - avg >= 0.5)
+                avg++;
+
+            print.WriteLine(avg);
         }
 
         private static int[] Sort(int[] array)
@@ -74,32 +115,6 @@
             }
 
             return list;
-        }
-
-        private static int BinarySearch(int[] list, int target)
-        {
-            int start = 0;
-            int end = list.Length - 1;
-            int mid = (end + start) / 2;
-
-            while (start <= end)
-            {
-                if (list[mid] == target)
-                {
-                    return 1;
-                }
-                else if (list[mid] > target)
-                {
-                    end = mid - 1;
-                }
-                else
-                {
-                    start = mid + 1;
-                }
-                mid = (end + start) / 2;
-            }
-
-            return 0;
         }
     }
 }

@@ -1,10 +1,33 @@
-﻿namespace Functions
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BackjoonCodingTest.Silver5
 {
-    internal class Program
+    public class No_2751
     {
-        static void Main(string[] args)
+        public No_2751()
         {
-            
+            using var reader = new System.IO.StreamReader(Console.OpenStandardInput());
+            using var print = new System.IO.StreamWriter(Console.OpenStandardOutput());
+
+            int count = int.Parse(reader.ReadLine());
+
+            int[] array = new int[count];
+
+            for (int i = 0; i < count; i++)
+            {
+                array[i] = int.Parse(reader.ReadLine());
+            }
+
+            array = Sort(array);
+
+            for (int i = 0; i < count; i++)
+            {
+                print.WriteLine(array[i]);
+            }
         }
 
         private static int[] Sort(int[] array)
@@ -74,32 +97,6 @@
             }
 
             return list;
-        }
-
-        private static int BinarySearch(int[] list, int target)
-        {
-            int start = 0;
-            int end = list.Length - 1;
-            int mid = (end + start) / 2;
-
-            while (start <= end)
-            {
-                if (list[mid] == target)
-                {
-                    return 1;
-                }
-                else if (list[mid] > target)
-                {
-                    end = mid - 1;
-                }
-                else
-                {
-                    start = mid + 1;
-                }
-                mid = (end + start) / 2;
-            }
-
-            return 0;
         }
     }
 }
