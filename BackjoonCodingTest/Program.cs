@@ -10,22 +10,8 @@ namespace BackjoonCodingTest
             using var print = new System.IO.StreamWriter(Console.OpenStandardOutput());
 
             string input = reader.ReadLine();
-            int cases = int.Parse(input);
 
-            for(int i = 0; i < cases; i++)
-            {
-                input = reader.ReadLine();
-                int H = int.Parse(input.Split()[0]);
-                int W = int.Parse(input.Split()[1]);
-                int N = int.Parse(input.Split()[2]);
-
-                int x = (N - 1) / H + 1;
-                int y = N % H;
-                if (y == 0)
-                    y = H;
-
-                print.WriteLine(y + String.Format("{0:D2}", x));
-            }
+            
         }
     }
 }
