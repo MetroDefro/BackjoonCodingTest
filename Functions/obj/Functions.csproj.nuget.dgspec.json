@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My\\Practice\\BackjoonCodingTest\\Functions\\Functions.csproj": {}
+    "D:\\DefroMat\\programing\\BackjoonCodingTest\\Functions\\Functions.csproj": {}
   },
   "projects": {
-    "D:\\My\\Practice\\BackjoonCodingTest\\Functions\\Functions.csproj": {
+    "D:\\DefroMat\\programing\\BackjoonCodingTest\\Functions\\Functions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My\\Practice\\BackjoonCodingTest\\Functions\\Functions.csproj",
+        "projectUniqueName": "D:\\DefroMat\\programing\\BackjoonCodingTest\\Functions\\Functions.csproj",
         "projectName": "Functions",
-        "projectPath": "D:\\My\\Practice\\BackjoonCodingTest\\Functions\\Functions.csproj",
-        "packagesPath": "C:\\Users\\he.kim\\.nuget\\packages\\",
-        "outputPath": "D:\\My\\Practice\\BackjoonCodingTest\\Functions\\obj\\",
+        "projectPath": "D:\\DefroMat\\programing\\BackjoonCodingTest\\Functions\\Functions.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\DefroMat\\programing\\BackjoonCodingTest\\Functions\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\he.kim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,7 +45,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -58,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.311\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
