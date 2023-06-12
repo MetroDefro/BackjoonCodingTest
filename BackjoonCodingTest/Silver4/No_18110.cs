@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Silver4
 {
     public class No_18110
     {
@@ -26,7 +26,7 @@ namespace BackjoonCodingTest
                 scores[i] = int.Parse(reader.ReadLine());
             }
 
-            double num = (double)n * 0.15;
+            double num = n * 0.15;
             int delete = (int)num;
             if (num - delete >= 0.5)
                 delete++;

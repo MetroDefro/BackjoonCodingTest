@@ -1,10 +1,42 @@
-﻿namespace Functions
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BackjoonCodingTest.Silver4
 {
-    internal class Program
+    public class No_11399
     {
-        static void Main(string[] args)
+        public No_11399()
         {
-            
+            using var reader = new System.IO.StreamReader(Console.OpenStandardInput());
+            using var print = new System.IO.StreamWriter(Console.OpenStandardOutput());
+
+            string input = reader.ReadLine();
+
+            int N = int.Parse(input);
+
+            input = reader.ReadLine();
+            string[] strings = input.Split();
+            int[] times = new int[N];
+            for (int i = 0; i < N; i++)
+            {
+                times[i] = int.Parse(strings[i]);
+            }
+
+            times = Sort(times);
+
+            int sum = 0;
+            for (int i = 0; i < N; i++)
+            {
+                int temp = 0;
+                for (int j = 0; j <= i; j++)
+                    temp += times[j];
+                sum += temp;
+            }
+
+            print.WriteLine(sum);
         }
 
         private static int[] Sort(int[] array)
@@ -74,44 +106,6 @@
             }
 
             return list;
-        }
-
-        private static int BinarySearch(int[] list, int target)
-        {
-            int start = 0;
-            int end = list.Length - 1;
-            int mid = (end + start) / 2;
-
-            while (start <= end)
-            {
-                if (list[mid] == target)
-                {
-                    return 1;
-                }
-                else if (list[mid] > target)
-                {
-                    end = mid - 1;
-                }
-                else
-                {
-                    start = mid + 1;
-                }
-                mid = (end + start) / 2;
-            }
-
-            return 0;
-        }
-
-        private static void DFS(bool[] visited, List<int>[] list, int id)
-        {
-            if (!visited[id])
-            {
-                visited[id] = true;
-                for (int i = 0; i < list[id].Count; i++)
-                {
-                    DFS(visited, list, list[id][i]);
-                }
-            }
         }
     }
 }

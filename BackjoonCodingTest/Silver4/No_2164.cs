@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Silver4
 {
     public class No_2164
     {

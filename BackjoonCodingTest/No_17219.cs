@@ -6,42 +6,37 @@ using System.Threading.Tasks;
 
 namespace BackjoonCodingTest
 {
-    public class No_1620
+    public class No_17219
     {
-        public No_1620()
+        public No_17219()
         {
             using var reader = new System.IO.StreamReader(Console.OpenStandardInput());
             using var print = new System.IO.StreamWriter(Console.OpenStandardOutput());
 
             string input = reader.ReadLine();
+
             int N = int.Parse(input.Split()[0]);
             int M = int.Parse(input.Split()[1]);
 
-            Dictionary<int, string> dictionary = new Dictionary<int, string>();
-            Dictionary<string, int> dictionaryInverse = new Dictionary<string, int>();
+            Dictionary<string, string> sites = new Dictionary<string, string>();
 
             for (int i = 0; i < N; i++)
             {
                 input = reader.ReadLine();
-                dictionary.Add(i + 1, input);
-                dictionaryInverse.Add(input, i + 1);
+                sites.Add(input.Split()[0], input.Split()[1]);
             }
 
+            StringBuilder builder = new StringBuilder();
 
             for (int i = 0; i < M; i++)
             {
                 input = reader.ReadLine();
-                if (int.TryParse(input, out int num))
-                {
-                    if (dictionary.TryGetValue(num, out string value))
-                        print.WriteLine(value);
-                }
-                else
-                {
-                    if (dictionaryInverse.TryGetValue(input, out int key))
-                        print.WriteLine(key);
-                }
+                sites.TryGetValue(input, out string value);
+                builder.Append(value);
+                builder.AppendLine();
             }
+
+            print.WriteLine(builder.ToString());
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Bronze3
 {
     public class No_4153
     {

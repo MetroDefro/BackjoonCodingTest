@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Silver4
 {
     public class No_1764
     {
@@ -75,7 +75,7 @@ namespace BackjoonCodingTest
                                 end = mid - 1;
                                 break;
                             }
-                            else if ((list[mid][i] < target[i]))
+                            else if (list[mid][i] < target[i])
                             {
                                 start = mid + 1;
                                 break;
@@ -98,7 +98,7 @@ namespace BackjoonCodingTest
                                 end = mid - 1;
                                 break;
                             }
-                            else if ((list[mid][i] < target[i]))
+                            else if (list[mid][i] < target[i])
                             {
                                 start = mid + 1;
                                 break;

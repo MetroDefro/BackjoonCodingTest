@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Bronze3
 {
     public class No_10250
     {
@@ -28,7 +28,7 @@ namespace BackjoonCodingTest
                 if (y == 0)
                     y = H;
 
-                print.WriteLine(y + String.Format("{0:D2}", x));
+                print.WriteLine(y + string.Format("{0:D2}", x));
             }
         }
     }
