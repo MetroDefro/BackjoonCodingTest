@@ -113,5 +113,26 @@
                 }
             }
         }
+        private static int Combination(int n, int r)
+        {
+            int molecule = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                molecule *= i;
+            }
+
+            int denominator = 1;
+            for (int i = 1; i <= r; i++)
+            {
+                denominator *= i;
+            }
+            for (int i = 1; i <= n - r; i++)
+            {
+                denominator *= i;
+            }
+
+            return molecule / denominator;
+        }
+
     }
 }
