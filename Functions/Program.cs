@@ -113,6 +113,32 @@
                 }
             }
         }
+
+        void BFS(List<int>[] list, int id)
+        {
+            bool[] visited = new bool[list.Length];
+            Queue<int> queue = new Queue<int>();
+
+            queue.Enqueue(id);
+
+            while (queue.Count > 0)
+            {
+                int index = queue.Dequeue();
+
+                for (int i = 0; i < list[index].Count; i++)
+                {
+                    if (!visited[list[index][i]])
+                        queue.Enqueue(list[index][i]);
+                }
+
+                if (!visited[index])
+                {
+                    visited[index] = true;
+                    print.Write(index + " ");
+                }
+            }
+        }
+
         private static int Combination(int n, int r)
         {
             int molecule = 1;
