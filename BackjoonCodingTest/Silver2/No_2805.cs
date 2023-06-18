@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Silver2
 {
     public class No_2805
     {
@@ -43,7 +43,7 @@ namespace BackjoonCodingTest
                 for (int i = 0; i < list.Length; i++)
                 {
                     if (list[i] > mid)
-                        sum += (list[i] - mid);
+                        sum += list[i] - mid;
                 }
 
                 if (sum == target)

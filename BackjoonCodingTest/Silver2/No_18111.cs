@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Silver2
 {
     public class No_18111
     {
@@ -50,7 +50,7 @@ namespace BackjoonCodingTest
                 {
                     if (i > j)
                     {
-                        upCount += (heights[j] * (i - j));
+                        upCount += heights[j] * (i - j);
                         if (upCount > inven)
                         {
                             upCount = -1;
@@ -62,7 +62,7 @@ namespace BackjoonCodingTest
                     {
                         int temp = heights[j] * (j - i);
                         inven += temp;
-                        downCount += (temp * 2);
+                        downCount += temp * 2;
                     }
 
                 }
@@ -70,7 +70,7 @@ namespace BackjoonCodingTest
                 if (upCount == -1)
                     continue;
 
-                if (minCount >= (upCount + downCount))
+                if (minCount >= upCount + downCount)
                 {
                     minCount = upCount + downCount;
                     maxIndex = i;

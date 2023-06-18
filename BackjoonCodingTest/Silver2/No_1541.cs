@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Silver2
 {
     public class No_1541
     {
@@ -24,7 +24,7 @@ namespace BackjoonCodingTest
                 {
                     if (plusNums != string.Empty)
                     {
-                        nums.Add((int.Parse(plusNums) + int.Parse(num.ToString())));
+                        nums.Add(int.Parse(plusNums) + int.Parse(num.ToString()));
                         plusNums = string.Empty;
                         num.Clear();
                     }
@@ -57,7 +57,7 @@ namespace BackjoonCodingTest
 
             if (plusNums != string.Empty)
             {
-                nums.Add((int.Parse(plusNums) + int.Parse(num.ToString())));
+                nums.Add(int.Parse(plusNums) + int.Parse(num.ToString()));
                 plusNums = string.Empty;
                 num.Clear();
             }

@@ -4,53 +4,60 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Silver2
 {
-    public class No_18870
+    public class No_15663
     {
-        public No_18870()
+        public No_15663()
         {
             using var reader = new System.IO.StreamReader(Console.OpenStandardInput());
             using var print = new System.IO.StreamWriter(Console.OpenStandardOutput());
 
-            int N = int.Parse(reader.ReadLine());
+            string input = reader.ReadLine();
+            int n = int.Parse(input.Split()[0]);
+            int m = int.Parse(input.Split()[1]);
 
+            int[] nums = new int[n];
             string[] inputs = reader.ReadLine().Split();
-
-            int[] vectors = new int[N];
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < n; i++)
             {
-                vectors[i] = int.Parse(inputs[i]);
+                nums[i] = int.Parse(inputs[i]);
             }
 
-            Dictionary<int, int> dictionary = Dedupe(Sort(vectors));
+            nums = Sort(nums);
+            bool[] visited = new bool[n + 1];
+            int[] list = new int[m];
+            DFS(0);
 
-            for (int i = 0; i < N; i++)
+            void DFS(int depth)
             {
-                print.Write(dictionary[vectors[i]] + " ");
-            }
-        }
-
-        private static Dictionary<int, int> Dedupe(int[] array)
-        {
-            int length = array.Length;
-            Dictionary<int, int> dictionary = new Dictionary<int, int>();
-            int count = 0;
-
-            dictionary.Add(array[0], count);
-            int prevNum = array[0];
-            count++;
-            for (int i = 1; i < length; i++)
-            {
-                if (array[i] != prevNum)
+                if (depth == m)
                 {
-                    dictionary.Add(array[i], count);
-                    prevNum = array[i];
-                    count++;
+                    StringBuilder stringBuilder = new StringBuilder();
+                    for (int i = 0; i < m; i++)
+                        stringBuilder.Append(list[i] + " ");
+                    print.WriteLine(stringBuilder.ToString());
+
+                    return;
+                }
+                int prev = 0;
+                for (int i = 0; i < n; i++)
+                {
+                    if (!visited[i])
+                    {
+                        if (nums[i] != prev)
+                        {
+                            visited[i] = true;
+                            list[depth] = nums[i];
+
+                            DFS(depth + 1);
+
+                            visited[i] = false;
+                        }
+                        prev = nums[i];
+                    }
                 }
             }
-
-            return dictionary;
         }
 
         private static int[] Sort(int[] array)

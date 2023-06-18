@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackjoonCodingTest
+namespace BackjoonCodingTest.Silver2
 {
     public class No_1654
     {
@@ -32,7 +32,7 @@ namespace BackjoonCodingTest
                 max += lines[i];
             }
 
-            max /= (long)n;
+            max /= n;
 
             print.WriteLine(BinarySearch(lines, n, (int)max));
         }
