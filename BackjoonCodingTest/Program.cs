@@ -10,8 +10,7 @@ namespace BackjoonCodingTest
             using var reader = new System.IO.StreamReader(Console.OpenStandardInput());
             using var print = new System.IO.StreamWriter(Console.OpenStandardOutput());
 
-            string[] inputs = reader.ReadLine().Split();
-
+            int N = int.Parse(reader.ReadLine());
         }
     }
 }
