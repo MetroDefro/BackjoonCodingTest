@@ -1,4 +1,6 @@
-﻿namespace Functions
+﻿using System.Text;
+
+namespace Functions
 {
     internal class Program
     {
@@ -134,7 +136,6 @@
                 if (!visited[index])
                 {
                     visited[index] = true;
-                    print.Write(index + " ");
                 }
             }
         }
@@ -159,6 +160,37 @@
 
             return molecule / denominator;
         }
+        private static void Preorder(StringBuilder stringBuilder, Tree[] trees, int root)
+        {
+            stringBuilder.Append((char)(root + 'A'));
+            if (trees[root].LeftChilde != -1)
+                Preorder(stringBuilder, trees, trees[root].LeftChilde);
+            if (trees[root].RightChilde != -1)
+                Preorder(stringBuilder, trees, trees[root].RightChilde);
+        }
 
+        private static void Inorder(StringBuilder stringBuilder, Tree[] trees, int root)
+        {
+            if (trees[root].LeftChilde != -1)
+                Inorder(stringBuilder, trees, trees[root].LeftChilde);
+            stringBuilder.Append((char)(root + 'A'));
+            if (trees[root].RightChilde != -1)
+                Inorder(stringBuilder, trees, trees[root].RightChilde);
+        }
+
+        private static void Postorder(StringBuilder stringBuilder, Tree[] trees, int root)
+        {
+            if (trees[root].LeftChilde != -1)
+                Postorder(stringBuilder, trees, trees[root].LeftChilde);
+            if (trees[root].RightChilde != -1)
+                Postorder(stringBuilder, trees, trees[root].RightChilde);
+            stringBuilder.Append((char)(root + 'A'));
+        }
+
+        private class Tree
+        {
+            public int LeftChilde { get; set; } = -1;
+            public int RightChilde { get; set; } = -1;
+        }
     }
 }
