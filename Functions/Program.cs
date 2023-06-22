@@ -9,6 +9,30 @@ namespace Functions
             
         }
 
+        private static long GCD(int value1, int value2)
+        {
+            int smallValue = value1 < value2 ? value1 : value2;
+            int maxMeasure = 1;
+
+            for (int i = 2; i <= smallValue; i++)
+            {
+                if (value1 % i == 0)
+                {
+                    if (value2 % i == 0)
+                    {
+                        maxMeasure = i;
+                    }
+                }
+            }
+
+            return maxMeasure;
+        }
+
+        private static long LCM(int value1, int value2)
+        {
+            return (value1 * value2 / GCD(value1, value2));
+        }
+
         private static int[] Sort(int[] array)
         {
             array = Divide(array, array.Length);
