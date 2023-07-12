@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BackjoonCodingTest
 {
@@ -10,7 +11,8 @@ namespace BackjoonCodingTest
             using var print = new System.IO.StreamWriter(Console.OpenStandardOutput());
 
             string[] inputs = reader.ReadLine().Split();
-
+            int V = int.Parse(inputs[0]);
+            int E = int.Parse(inputs[1]);
 
             reader.Close();
             print.Close();
